@@ -1,0 +1,15 @@
+/home/pc/csharp2024/basics/bin/Debug/net8.0/basics
+/home/pc/csharp2024/basics/bin/Debug/net8.0/basics.deps.json
+/home/pc/csharp2024/basics/bin/Debug/net8.0/basics.runtimeconfig.json
+/home/pc/csharp2024/basics/bin/Debug/net8.0/basics.dll
+/home/pc/csharp2024/basics/bin/Debug/net8.0/basics.pdb
+/home/pc/csharp2024/basics/obj/Debug/net8.0/basics.GeneratedMSBuildEditorConfig.editorconfig
+/home/pc/csharp2024/basics/obj/Debug/net8.0/basics.AssemblyInfoInputs.cache
+/home/pc/csharp2024/basics/obj/Debug/net8.0/basics.AssemblyInfo.cs
+/home/pc/csharp2024/basics/obj/Debug/net8.0/basics.csproj.CoreCompileInputs.cache
+/home/pc/csharp2024/basics/obj/Debug/net8.0/basics.sourcelink.json
+/home/pc/csharp2024/basics/obj/Debug/net8.0/basics.dll
+/home/pc/csharp2024/basics/obj/Debug/net8.0/refint/basics.dll
+/home/pc/csharp2024/basics/obj/Debug/net8.0/basics.pdb
+/home/pc/csharp2024/basics/obj/Debug/net8.0/basics.genruntimeconfig.cache
+/home/pc/csharp2024/basics/obj/Debug/net8.0/ref/basics.dll
