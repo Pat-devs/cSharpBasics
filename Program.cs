@@ -1,30 +1,32 @@
 ﻿// conditional statements
+int userAge = 55;
 
+bool isUserAnAdult = userAge >= 18;
 
+// message to user
+string message;
 
-int score = 51; // 0-100
-int experience = 3;
+// check if user is an adult and update the message variable
 
-// check of score is between 50 to 60 ?
-if (score >= 50 && score <= 60)
+/* // Example 1. using if-else statements:
+if (isUserAnAdult)
 {
-    // code written here will only execute if the above condition is "truthy"
-    Console.WriteLine("score between 50 to 60");
-    if (experience > 5) {
-        Console.WriteLine("and experience is greater than 5");
-    }
-
-    string message = "HI";
-    Console.WriteLine(message);
+    message = "User is an adult";
 }
 else
 {
-    Console.WriteLine("score is outside of the range 50 to 60");
-}
+    message = "User is not an adult";
+} */
 
+// Example 2. using "conditional operator" (also known as ternary operator)
+
+// condtion expression ? if true : if false;
+message = isUserAnAdult ? "User is an adult" : "User is not an adult";
+
+
+
+// output the message to the user
 Console.WriteLine(message);
-
-
 
 
 /* // basic calculator
