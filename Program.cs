@@ -1,18 +1,4 @@
-﻿void MyFunction(string message) 
-{
-    Console.WriteLine(message);
-}
-
-MyFunction("Hi there");
-MyFunction("Hola");
-MyFunction("Czesc");
-MyFunction("Yo");
-MyFunction("Hei");
-
-
-
-
-// basic calculator
+﻿// basic calculator
 // declare two number variables and a sum variable
 
 // new features and how it should work:
@@ -24,9 +10,33 @@ MyFunction("Hei");
 // 6. Based on #4 calculate the equation, and display the result
 
 int num1;
-string mathOperator; // +,-,/,*
 int num2;
 int result;
+
+// function to calculate and display result of an equation
+// idea: function takes an opetaror as argument
+void Calculate(string mathOperator)
+{
+    if (mathOperator == "+") 
+    {
+    }
+    else if (mathOperator == "-") 
+    {
+    }
+    else if (mathOperator == "/") 
+    {
+    }
+    if (mathOperator == "*") 
+    {
+    }
+    else 
+    {
+    }
+    // Calculate the sum of two numbers and store it in the sum variable
+    result = num1 + num2;
+    // Display the result to the user
+    Console.WriteLine($"{num1} + {num2} = {result}");
+}
 
 Console.WriteLine("Welcome to my calculator\nEnter a number:");
 // 1. Wait for user to enter the first number
@@ -37,6 +47,8 @@ num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter either +,-,/,* operator:");
 mathOperator = Console.ReadLine();
 
+
+
 // check if the user entered a valid operator
 if (mathOperator == "+") 
 {
@@ -46,10 +58,7 @@ if (mathOperator == "+")
     // Convert user input into a number, using the Convert-class
     num2 = Convert.ToInt32(Console.ReadLine());
 
-    // Calculate the sum of two numbers and store it in the sum variable
-    result = num1 + num2;
-    // Display the result to the user
-    Console.WriteLine($"{num1} + {num2} = {result}");
+    Calculate();
 }
 else if (mathOperator == "-") 
 {
