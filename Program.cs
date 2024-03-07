@@ -1,59 +1,92 @@
-﻿// conditional statements
-int userAge = 55;
+﻿// basic calculator
+// declare two number variables and a sum variable
 
-bool isUserAnAdult = userAge >= 18;
+// new features and how it should work:
+// 1. Show the welcome message
+// 2. Ask user to provide a number
+// 3. Ask user to provide a mathematical operator (+,-,/,*)
+// 4. Ask user to provide another number
+// 5. Check which operator the user typed
+// 6. Based on #4 calculate the equation, and display the result
 
-// message to user
-string message;
+using System.Numerics;
 
-// check if user is an adult and update the message variable
+int num1;
+string mathOperator; // +,-,/,*
+int num2;
+int result;
 
-/* // Example 1. using if-else statements:
-if (isUserAnAdult)
+Console.WriteLine("Welcome to my calculator\nEnter a number:");
+// 1. Wait for user to enter the first number
+// Convert the user input into a number, using the Convert-class
+num1 = Convert.ToInt32(Console.ReadLine());
+
+// 2. Wait for user to enter an operator:
+Console.WriteLine("Enter either +,-,/,* operator:");
+mathOperator = Console.ReadLine();
+
+// check if the user entered a valid operator
+if (mathOperator == "+") 
 {
-    message = "User is an adult";
+    // 3. Run the math operation and display the result
+    //  Wait for user to enter the second number
+    Console.WriteLine("Enter another number:");
+    // Convert user input into a number, using the Convert-class
+    num2 = Convert.ToInt32(Console.ReadLine());
+
+    // Calculate the sum of two numbers and store it in the sum variable
+    result = num1 + num2;
+    // Display the result to the user
+    Console.WriteLine($"{num1} + {num2} = {result}");
+}
+else if (mathOperator == "-") 
+{
+    // 3. Run the math operation and display the result
+    //  Wait for user to enter the second number
+    Console.WriteLine("Enter another number:");
+    // Convert user input into a number, using the Convert-class
+    num2 = Convert.ToInt32(Console.ReadLine());
+
+    // Calculate the sum of two numbers and store it in the sum variable
+    result = num1 - num2;
+    // Display the result to the user
+    Console.WriteLine($"{num1} - {num2} = {result}");
+}
+else if (mathOperator == "/") 
+{
+    // 3. Run the math operation and display the result
+    //  Wait for user to enter the second number
+    Console.WriteLine("Enter another number:");
+    // Convert user input into a number, using the Convert-class
+    num2 = Convert.ToInt32(Console.ReadLine());
+
+    if (num2 != 0) 
+    {
+        // Calculate the sum of two numbers and store it in the sum variable
+        result = num1 / num2;
+        // Display the result to the user
+        Console.WriteLine($"{num1} / {num2} = {result}");
+    }
+    else
+    {
+        Console.WriteLine("Cannot divide by 0!");
+    }
+}
+else if (mathOperator == "*") 
+{
+    // 3. Run the math operation and display the result
+    //  Wait for user to enter the second number
+    Console.WriteLine("Enter another number:");
+    // Convert user input into a number, using the Convert-class
+    num2 = Convert.ToInt32(Console.ReadLine());
+
+    // Calculate the sum of two numbers and store it in the sum variable
+    result = num1 * num2;
+    // Display the result to the user
+    Console.WriteLine($"{num1} * {num2} = {result}");
 }
 else
 {
-    message = "User is not an adult";
-} */
+    Console.WriteLine("You entered an invalid operator!");
+}
 
-// Example 2. using "conditional operator" (also known as ternary operator)
-
-// condtion expression ? if true : if false;
-message = isUserAnAdult ? "User is an adult" : "User is not an adult";
-
-
-
-// output the message to the user
-Console.WriteLine(message);
-
-
-/* // basic calculator
-// declare two number variables and a sum variable
-int num1;
-int num2;
-int sum;
-// user input variables (strings)
-string userInput1;
-string userInput2;
-
-Console.WriteLine("Welcome to my calculator\nEnter a number:");
-// Wait for user to enter the first number
-userInput1 = Console.ReadLine();
-
-// Convert a string into a number, using the Convert-class
-num1 = Convert.ToInt32(userInput1);
-
-//  Wait for user to enter the second number
-Console.WriteLine("Enter another number:");
-userInput2 = Console.ReadLine();
-// Convert userInput2 into a number, using the Convert-class
-num2 = Convert.ToInt32(userInput2);
-
-// Calculate the sum of two numbers and store it in the sum variable
-sum = num1 + num2;
-
-//Console.WriteLine(num1 + " + " + num2 + " = " + sum);
-
-Console.WriteLine($"{num1} + {num2} = {sum}"); */
