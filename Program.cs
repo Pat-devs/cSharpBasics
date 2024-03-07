@@ -1,4 +1,18 @@
-﻿// basic calculator
+﻿void MyFunction(string message) 
+{
+    Console.WriteLine(message);
+}
+
+MyFunction("Hi there");
+MyFunction("Hola");
+MyFunction("Czesc");
+MyFunction("Yo");
+MyFunction("Hei");
+
+
+
+
+// basic calculator
 // declare two number variables and a sum variable
 
 // new features and how it should work:
@@ -8,8 +22,6 @@
 // 4. Ask user to provide another number
 // 5. Check which operator the user typed
 // 6. Based on #4 calculate the equation, and display the result
-
-using System.Numerics;
 
 int num1;
 string mathOperator; // +,-,/,*
