@@ -1,21 +1,31 @@
-﻿/* using System.ComponentModel;
+﻿// Arrays in C#
 
-int x = 1;
-while (x <= 5) {
-    Console.WriteLine(x);
-    x++;
-} */
+// declare and array of type and and length 5
+//int[] scores = new int[5]; // can hold upto 5 integers
+// assign values manually to an array
+//scores[0] = 5;
+//scores[1] = 3;
+//scores[2] = 1;
+//scores[3] = 50;
+//scores[4] = 9;
 
-// for loop:
+// declare and assign values to an array on one line:
+int[] scores = {5, 3, 1, 50, 9};
 
-//for ("initial statemement"; "condition to evaluate"; "updating function")
+//Console.WriteLine(scores[1]);
 
-for (int i = 1; i <= 50; i++) {
-
-    if (i == 3) continue; // continue prevents code below from running
-    Console.WriteLine(i);
-    if (i >= 10) break; // to break out of the loop
+for (int index = 0; index <= 4; index++)
+{
+    //Console.WriteLine(scores[index]);
 }
+
+// for each loop, loops through a whole array:
+foreach(int element in scores) 
+{
+    Console.WriteLine(element);
+}
+
+
 
 /* 
 // basic calculator
