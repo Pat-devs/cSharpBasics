@@ -1,32 +1,25 @@
-﻿
-using System.Net;
+﻿// 1. while loop:
+int usersNumber = -1;
 
-int num = 5;
-
-
-/* if (num >= 5) {
-    Console.WriteLine("Number is 5 or more");
-}
-else if (num >= 2) {
-    Console.WriteLine("Number is 2 or more");
-}
-else 
+while (usersNumber < 0 || usersNumber > 10) 
 {
-    Console.WriteLine("Number is somethimng else");
-} */
-
-switch(num) 
-{
-    case >= 5:
-        Console.WriteLine("Number is 5 or more"); 
-        break;
-    case >= 2:
-        Console.WriteLine("Number is 2 or more"); 
-        break;
-    default: 
-        Console.WriteLine("Nothing");
-        break;
+    Console.WriteLine("Enter a number between 0 and 10");
+    string userResponse = Console.ReadLine();
+    usersNumber = Convert.ToInt32(userResponse);
 }
+
+// 2. do-while loop
+
+int usersNumber = -1;
+
+do
+{
+    Console.WriteLine("Enter a number between 0 and 10");
+    string userResponse = Console.ReadLine();
+    usersNumber = Convert.ToInt32(userResponse);
+}
+while (usersNumber < 0 || usersNumber > 10);
+
 
 
 /* 
