@@ -1,4 +1,31 @@
-﻿// basic calculator
+﻿ // function expression takes two numbers as parameters, and returns their sum
+ //int Calc(int a, int b) => a + b;
+
+// normal function declaration, takes two numbers as parameters, and returns their sum
+int Calc(int a, int b) {
+    return a + b;
+}
+
+string Greeting(int luckyNumber) {
+    return "Hi, the number is " + luckyNumber;
+}
+
+void DisplayMessage(string message) {
+    Console.WriteLine("This is your message");
+    Console.WriteLine(message);
+}
+
+DisplayMessage(Greeting(264));
+
+Console.WriteLine(Greeting(5));
+
+
+
+ Console.WriteLine(  Calc(2,2)   );
+  Console.WriteLine(  Calc(0,5)   );
+   Console.WriteLine(  Calc(2,54246)   );
+
+// basic calculator
 // declare two number variables and a sum variable
 
 // new features and how it should work:
@@ -8,35 +35,10 @@
 // 4. Ask user to provide another number
 // 5. Check which operator the user typed
 // 6. Based on #4 calculate the equation, and display the result
-
+/* 
 int num1;
 int num2;
 int result;
-
-// function to calculate and display result of an equation
-// idea: function takes an opetaror as argument
-void Calculate(string mathOperator)
-{
-    if (mathOperator == "+") 
-    {
-    }
-    else if (mathOperator == "-") 
-    {
-    }
-    else if (mathOperator == "/") 
-    {
-    }
-    if (mathOperator == "*") 
-    {
-    }
-    else 
-    {
-    }
-    // Calculate the sum of two numbers and store it in the sum variable
-    result = num1 + num2;
-    // Display the result to the user
-    Console.WriteLine($"{num1} + {num2} = {result}");
-}
 
 Console.WriteLine("Welcome to my calculator\nEnter a number:");
 // 1. Wait for user to enter the first number
@@ -45,7 +47,7 @@ num1 = Convert.ToInt32(Console.ReadLine());
 
 // 2. Wait for user to enter an operator:
 Console.WriteLine("Enter either +,-,/,* operator:");
-mathOperator = Console.ReadLine();
+string mathOperator = Console.ReadLine();
 
 
 
@@ -58,7 +60,10 @@ if (mathOperator == "+")
     // Convert user input into a number, using the Convert-class
     num2 = Convert.ToInt32(Console.ReadLine());
 
-    Calculate();
+    // Calculate the sum of two numbers and store it in the sum variable
+    result = num1 + num2;
+    // Display the result to the user
+    Console.WriteLine($"{num1} + {num2} = {result}");
 }
 else if (mathOperator == "-") 
 {
@@ -110,4 +115,7 @@ else
 {
     Console.WriteLine("You entered an invalid operator!");
 }
+
+ */
+
 
