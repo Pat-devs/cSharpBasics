@@ -1,26 +1,21 @@
-﻿// 1. while loop:
-int usersNumber = -1;
+﻿/* using System.ComponentModel;
 
-while (usersNumber < 0 || usersNumber > 10) 
-{
-    Console.WriteLine("Enter a number between 0 and 10");
-    string userResponse = Console.ReadLine();
-    usersNumber = Convert.ToInt32(userResponse);
+int x = 1;
+while (x <= 5) {
+    Console.WriteLine(x);
+    x++;
+} */
+
+// for loop:
+
+//for ("initial statemement"; "condition to evaluate"; "updating function")
+
+for (int i = 1; i <= 50; i++) {
+
+    if (i == 3) continue; // continue prevents code below from running
+    Console.WriteLine(i);
+    if (i >= 10) break; // to break out of the loop
 }
-
-// 2. do-while loop
-
-int usersNumber = -1;
-
-do
-{
-    Console.WriteLine("Enter a number between 0 and 10");
-    string userResponse = Console.ReadLine();
-    usersNumber = Convert.ToInt32(userResponse);
-}
-while (usersNumber < 0 || usersNumber > 10);
-
-
 
 /* 
 // basic calculator
