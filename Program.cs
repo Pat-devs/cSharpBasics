@@ -1,30 +1,35 @@
-﻿ // function expression takes two numbers as parameters, and returns their sum
- //int Calc(int a, int b) => a + b;
+﻿
+using System.Net;
 
-// normal function declaration, takes two numbers as parameters, and returns their sum
-int Calc(int a, int b) {
-    return a + b;
+int num = 5;
+
+
+/* if (num >= 5) {
+    Console.WriteLine("Number is 5 or more");
+}
+else if (num >= 2) {
+    Console.WriteLine("Number is 2 or more");
+}
+else 
+{
+    Console.WriteLine("Number is somethimng else");
+} */
+
+switch(num) 
+{
+    case >= 5:
+        Console.WriteLine("Number is 5 or more"); 
+        break;
+    case >= 2:
+        Console.WriteLine("Number is 2 or more"); 
+        break;
+    default: 
+        Console.WriteLine("Nothing");
+        break;
 }
 
-string Greeting(int luckyNumber) {
-    return "Hi, the number is " + luckyNumber;
-}
 
-void DisplayMessage(string message) {
-    Console.WriteLine("This is your message");
-    Console.WriteLine(message);
-}
-
-DisplayMessage(Greeting(264));
-
-Console.WriteLine(Greeting(5));
-
-
-
- Console.WriteLine(  Calc(2,2)   );
-  Console.WriteLine(  Calc(0,5)   );
-   Console.WriteLine(  Calc(2,54246)   );
-
+/* 
 // basic calculator
 // declare two number variables and a sum variable
 
@@ -35,7 +40,9 @@ Console.WriteLine(Greeting(5));
 // 4. Ask user to provide another number
 // 5. Check which operator the user typed
 // 6. Based on #4 calculate the equation, and display the result
-/* 
+
+using System.Security.Cryptography.X509Certificates;
+
 int num1;
 int num2;
 int result;
@@ -61,7 +68,7 @@ if (mathOperator == "+")
     num2 = Convert.ToInt32(Console.ReadLine());
 
     // Calculate the sum of two numbers and store it in the sum variable
-    result = num1 + num2;
+    result = Add(num1,num2);
     // Display the result to the user
     Console.WriteLine($"{num1} + {num2} = {result}");
 }
@@ -74,7 +81,7 @@ else if (mathOperator == "-")
     num2 = Convert.ToInt32(Console.ReadLine());
 
     // Calculate the sum of two numbers and store it in the sum variable
-    result = num1 - num2;
+    result = Sub(num1,num2);
     // Display the result to the user
     Console.WriteLine($"{num1} - {num2} = {result}");
 }
@@ -89,7 +96,7 @@ else if (mathOperator == "/")
     if (num2 != 0) 
     {
         // Calculate the sum of two numbers and store it in the sum variable
-        result = num1 / num2;
+        result = Div(num1,num2);
         // Display the result to the user
         Console.WriteLine($"{num1} / {num2} = {result}");
     }
@@ -107,7 +114,7 @@ else if (mathOperator == "*")
     num2 = Convert.ToInt32(Console.ReadLine());
 
     // Calculate the sum of two numbers and store it in the sum variable
-    result = num1 * num2;
+    result = Mul(num1,num2);
     // Display the result to the user
     Console.WriteLine($"{num1} * {num2} = {result}");
 }
@@ -116,6 +123,12 @@ else
     Console.WriteLine("You entered an invalid operator!");
 }
 
+
+// Math functions:
+
+// Return the sum of two numbers:
+int Add(int a, int b) => a + b;
+int Sub(int a, int b) => a - b;
+int Div(int a, int b) => a / b;
+int Mul(int a, int b) => a * b;
  */
-
-
