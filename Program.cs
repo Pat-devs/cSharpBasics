@@ -1,17 +1,29 @@
-﻿
-// Loop through numbers 0 through 100
-// And display if the number is even or odd
+﻿/*
+In the FizzBuzz game, you count from 1 to 100. For each number:
 
-for(int number = 0; number <= 100; number++)
+If it's divisible by 3, you say "Fizz".
+If it's divisible by 5, you say "Buzz".
+If it's divisible by both 3 and 5, you say "FizzBuzz".
+Otherwise, you just say the number.
+*/
+
+for(int number = 1; number <= 100; number++)
 {
-    // example:
-    // 2 / 2 ... 0
-    // 5 / 2 = ... 1 leftover
-    if (number % 2 == 0) // if i divide i by 2, there will be no remainder left.
+    if (number % 3 == 0 && number % 5 == 0) // If it's divisible by both 3 and 5, you say "FizzBuzz".
     {
-        Console.WriteLine($"The number {number} is Even");
+        Console.WriteLine("FizzBuzz");
     }
-    else{
-        Console.WriteLine($"The number {number} is Odd");
+    else if (number % 3 == 0) // If it's divisible by 3, you say "Fizz".
+    {
+        Console.WriteLine("Fizz");
+    }
+    else if (number % 5 == 0) // If it's divisible by 5, you say "Fizz".
+    {
+        Console.WriteLine("Buzz");
+    }
+    
+    else // Otherwise, you just say the number.
+    {
+        Console.WriteLine(number);
     }
 }
