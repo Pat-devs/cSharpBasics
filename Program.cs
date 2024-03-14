@@ -1,45 +1,45 @@
-﻿/*
-In the FizzBuzz game, you count from 1 to 100. For each number:
+﻿using System;
 
-If it's divisible by 3, you say "Fizz".
-If it's divisible by 5, you say "Buzz".
-If it's divisible by both 3 and 5, you say "FizzBuzz".
-Otherwise, you just say the number.
-*/
-for(int number = 1; number <= 100; number++)
+public class Dog
 {
-    string message = "";
-    if (number % 3 == 0) // If it's divisible by 3, you say "Fizz".
+    // Properties
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public string Breed { get; set; }
+
+    // Constructor
+    public Dog(string name, int age, string breed)
     {
-        message += "Fizz";
-    }
-    if (number % 5 == 0) // If it's divisible by 3, you say "Fizz".
-    {
-        message += "Buzz";
-    }
-    else if (number % 3 != 0 && number % 5 != 0) // Otherwise, you just say the number.
-    {
-        message = Convert.ToString(number);
+        Name = name;
+        Age = age;
+        Breed = breed;
     }
 
-    Console.WriteLine(message);
+    // Bark Method:
+    public void Bark() 
+    {
+        Console.WriteLine("BARK, BARK!!");
+    }
+}
 
-    /* if (number % 3 == 0 && number % 5 == 0) // If it's divisible by both 3 and 5, you say "FizzBuzz".
+class Program
+{
+    static void Main(string[] args)
     {
-        message = "FizzBuzz";
-    }
-    else if (number % 3 == 0) // If it's divisible by 3, you say "Fizz".
-    {
-        message = "Fizz";
-    }
-    else if (number % 5 == 0) // If it's divisible by 5, you say "Buzz".
-    {
-        message = "Buzz";
-    }
-    else // Otherwise, you just say the number.
-    {
-        message = Convert.ToString(number);
-    }
+        // Creating a new instance of the Dog class
+        Dog myDog = new Dog("Buddy", 3, "Golden Retriever");
 
-    Console.WriteLine(message); */
+        Dog mySecondDog = new Dog("Bob", 4, "Husky");
+        // 1. type (name of the class, ie: Dog).
+        // 2. name of the variable (that holds an instance of a Dog)
+        // after = sign:
+        // new (means create a new instance of the given class)
+        // NameOfClass (plus any paramteres)
+
+        Console.WriteLine("I have one dog called " + myDog.Name);
+
+        Console.WriteLine("And I have another one called " + mySecondDog.Name);
+
+        mySecondDog.Bark();
+    }
 }
