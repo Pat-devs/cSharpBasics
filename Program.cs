@@ -1,11 +1,11 @@
 ﻿//int myNum = 2;
 
 // Create an instance of a "Dog"
-Dog myFirstDog = new Dog("Spot", 2); // a name, an ac
+Dog myFirstDog = new Dog("Spot", 2, 1234); // a name, an ac
 //myFirstDog.name = "Spot";
 //myFirstDog.age = 2;
 
-Dog mySecondDog = new Dog("Buddy", 4); // a name, an age
+Dog mySecondDog = new Dog("Buddy", 4, 12345); // a name, an age
 //mySecondDog.name = "Buddy";
 //myFirstDog.age = 3;
 
@@ -24,3 +24,11 @@ Dog mySecondDog = new Dog("Buddy", 4); // a name, an age
 
 
 myFirstDog.Fetch("paper");
+
+//Console.WriteLine("Hey dog, gimme your id!" + myFirstDog.dogId);
+
+// read value from a get method:
+Console.WriteLine(myFirstDog.DogId);
+// set a value with a setter method:
+myFirstDog.DogId = 9876;
+Console.WriteLine(myFirstDog.DogId);
