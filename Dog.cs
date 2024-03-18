@@ -4,6 +4,16 @@ class Dog
     public string Name;
     public int Age;
 
+    // alternative to getter / setter methods:
+    public void setDogId(int newId)
+    {
+        dogId = newId;
+    }
+    public int getDogId() {
+        return dogId;
+    }
+    ///////////////////////////////////
+
     // getter (reading things) and setter (updating/writing things back) methods
     public int DogId
     {
