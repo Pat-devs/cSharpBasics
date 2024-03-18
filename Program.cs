@@ -1,34 +1,20 @@
-﻿//int myNum = 2;
+﻿Random myRng = new Random();
 
-// Create an instance of a "Dog"
-Dog myFirstDog = new Dog("Spot", 2, 1234); // a name, an ac
-//myFirstDog.name = "Spot";
-//myFirstDog.age = 2;
+// dice gives random number between 1-6
+int dice1 = myRng.Next(1,7);
+int dice2 = myRng.Next(1,7);
+int dice3 = myRng.Next(1,7);
+int dice4 = myRng.Next(1,7);
+int dice5 = myRng.Next(1,7);
 
-Dog mySecondDog = new Dog("Buddy", 4, 12345); // a name, an age
-//mySecondDog.name = "Buddy";
-//myFirstDog.age = 3;
+//myRng.NextDouble
+// double luckyNum = myRng.NextDouble(); // returns a rng num between 0.0 - 1.0
 
-// with a constructor method, we can send multiple arguments while we instantiate the class:
-//Dog myFirstDog = new Dog("Spot", 2); // new dog, name: spot, age: 2
+// 0.0 - 0.5
 
-
-//Console.WriteLine(myFirstDog);
-
-
-
-//Console.WriteLine($"My name is {myFirstDog.name}");
-//myFirstDog.Bark();
-//Console.WriteLine($"My name is {mySecondDog.name}");
-//mySecondDog.Bark();
-
-
-myFirstDog.Fetch("paper");
-
-//Console.WriteLine("Hey dog, gimme your id!" + myFirstDog.dogId);
-
-// read value from a get method:
-Console.WriteLine(myFirstDog.DogId);
-// set a value with a setter method:
-myFirstDog.DogId = 9876;
-Console.WriteLine(myFirstDog.DogId);
+// print a random number
+Console.WriteLine(dice1);
+Console.WriteLine(dice2);
+Console.WriteLine(dice3);
+Console.WriteLine(dice4);
+Console.WriteLine(dice5);
