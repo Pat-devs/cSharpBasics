@@ -1,45 +1,26 @@
-﻿using System;
+﻿//int myNum = 2;
 
-public class Dog
-{
-    // Properties
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public string Breed { get; set; }
+// Create an instance of a "Dog"
+Dog myFirstDog = new Dog("Spot", 2); // a name, an ac
+//myFirstDog.name = "Spot";
+//myFirstDog.age = 2;
 
-    // Constructor
-    public Dog(string name, int age, string breed)
-    {
-        Name = name;
-        Age = age;
-        Breed = breed;
-    }
+Dog mySecondDog = new Dog("Buddy", 4); // a name, an age
+//mySecondDog.name = "Buddy";
+//myFirstDog.age = 3;
 
-    // Bark Method:
-    public void Bark() 
-    {
-        Console.WriteLine("BARK, BARK!!");
-    }
-}
+// with a constructor method, we can send multiple arguments while we instantiate the class:
+//Dog myFirstDog = new Dog("Spot", 2); // new dog, name: spot, age: 2
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Creating a new instance of the Dog class
-        Dog myDog = new Dog("Buddy", 3, "Golden Retriever");
 
-        Dog mySecondDog = new Dog("Bob", 4, "Husky");
-        // 1. type (name of the class, ie: Dog).
-        // 2. name of the variable (that holds an instance of a Dog)
-        // after = sign:
-        // new (means create a new instance of the given class)
-        // NameOfClass (plus any paramteres)
+//Console.WriteLine(myFirstDog);
 
-        Console.WriteLine("I have one dog called " + myDog.Name);
 
-        Console.WriteLine("And I have another one called " + mySecondDog.Name);
 
-        mySecondDog.Bark();
-    }
-}
+//Console.WriteLine($"My name is {myFirstDog.name}");
+//myFirstDog.Bark();
+//Console.WriteLine($"My name is {mySecondDog.name}");
+//mySecondDog.Bark();
+
+
+myFirstDog.Fetch("paper");
