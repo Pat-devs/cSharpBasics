@@ -1,8 +1,13 @@
 class Calculator
 {
-    public void Sum(int[] nums)
+    public void Sum(List<int> nums)
     {
-        Console.WriteLine(nums);
-        //Console.WriteLine($"{num1} + {num2} = {num1+num2}");
+        int sum = 0;
+
+        for (int i = 0; i < nums.Count(); i++)
+        {
+            sum += nums[i];
+        }
+        Console.WriteLine(sum);
     }
 }
