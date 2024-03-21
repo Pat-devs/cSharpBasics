@@ -2,6 +2,7 @@ class Dog
 {
     private int dogId;
     public string Name;
+    public void Bark(int numBarks, string someMessage)
     public int Age;
 
     // alternative to getter / setter methods:
@@ -41,6 +42,18 @@ class Dog
     public void Bark()
     {
         Console.WriteLine("Bark");
+    }
+    public void Bark(string barkMessage)
+    {
+        Console.WriteLine("Dog barks with message: " + barkMessage);
+    }
+    public void Bark(int numBarks)
+    {
+        while (numBarks > 0)
+        {
+            Console.WriteLine("Bark");
+            numBarks--;
+        }
     }
     // Makes the dog run a fetch an argument
     public void Fetch(string itemName) 
