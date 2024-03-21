@@ -3,11 +3,14 @@ class Calculator
     public void Sum(List<int> nums)
     {
         int sum = 0;
-
-        for (int i = 0; i < nums.Count(); i++)
+        string equation = "";
+        // loop through the entire list of nums and calculate the sum    
+        foreach (int num in nums)
         {
-            sum += nums[i];
+            equation += " + " +  num;
+            sum += num;
         }
-        Console.WriteLine(sum);
+
+        Console.WriteLine(equation + " = " + sum);
     }
 }
